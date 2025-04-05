@@ -1,9 +1,10 @@
 import { Providers } from './providers/Providers';
+import { AppRouter } from './routers/AppRouter';
 
 function App() {
     return (
         <Providers>
-            <h1>App</h1>
+            <AppRouter />
         </Providers>
     );
 }
