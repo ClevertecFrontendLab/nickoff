@@ -1,0 +1,21 @@
+.cardAvatar {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 26px 0 53px;
+}
+
+.cardAvatarTitle {
+    font-family: Inter, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.cardAvatarSubTitle {
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000a3;
+}
