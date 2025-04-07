@@ -4,7 +4,7 @@ import styles from './CardAvatar.module.css';
 
 const mockUser = {
     title: 'Екатерина Константинопольская',
-    src: './src/assets/user-photo.jpg',
+    src: '/src/assets/user-photo.jpg',
     subTitle: '@bake_and_pie',
 };
 export const CardAvatar = () => (

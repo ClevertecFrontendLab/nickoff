@@ -1,6 +1,7 @@
 .cardAvatar {
     display: flex;
     align-items: center;
+    min-width: 432px;
     gap: 12px;
     padding: 0 26px 0 53px;
 }

@@ -1,0 +1,23 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 128px;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: Inter, sans-serif;
+    vertical-align: middle;
+
+    span {
+        margin: 0 3px;
+    }
+
+    a {
+        color: #000000a3;
+    }
+}
+
+.breadcrumbs a[aria-current='page'] {
+    color: #000;
+}
