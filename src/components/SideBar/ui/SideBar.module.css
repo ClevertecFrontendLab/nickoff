@@ -1,0 +1,10 @@
+.sideBar {
+    position: fixed;
+    top: 80px;
+    right: 0;
+    height: calc(100vh - 80px);
+    width: 208px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

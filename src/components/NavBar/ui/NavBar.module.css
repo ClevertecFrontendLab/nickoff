@@ -1,0 +1,77 @@
+.navBar {
+    position: fixed;
+    top: 80px;
+    left: 0;
+    height: calc(100vh - 80px);
+    width: 256px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 1px 3px 0 #0000001f;
+    padding: 24px 5px 10px 10px;
+}
+
+.navBarMenu {
+    scrollbar-width: thin;
+    overflow-y: scroll;
+}
+
+.navBarLabel {
+    margin-left: 12px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #000;
+}
+
+.navBarList {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+
+    li {
+        padding: 6px 3px 6px 54px;
+        position: relative;
+    }
+
+    span {
+        position: absolute;
+        display: inline-block;
+        left: 40px;
+        width: 1px;
+        height: 24px;
+        background-color: #c4ff61;
+    }
+}
+
+.navBarList a[aria-current='page'] {
+    font-weight: 700;
+
+    span {
+        width: 8px;
+        height: 28px;
+        left: 33px;
+    }
+}
+
+@media (hover: hover) {
+    .navBarList {
+        a:hover > span {
+            position: absolute;
+            display: inline-block;
+            left: 40px;
+            width: 0;
+            height: 24px;
+            background-color: #c4ff61;
+        }
+    }
+
+    .navBarMenu:hover {
+        border-radius: 12px;
+        box-shadow: 0 4px 6px -1px #0000001a;
+    }
+}

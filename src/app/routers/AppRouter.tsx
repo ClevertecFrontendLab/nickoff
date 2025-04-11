@@ -1,7 +1,7 @@
 import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router';
 
 import { Juiciest } from '~/views/juiciest/Juiciest';
-import { Main } from '~/views/main/Main';
+import { Main } from '~/views/main/ui/Main';
 import { MainCourse } from '~/views/main-course/ui/MainCourse';
 import { VeganCuisine } from '~/views/vegan-cuisine/VeganCuisine';
 
