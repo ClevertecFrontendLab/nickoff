@@ -58,6 +58,25 @@
     }
 }
 
+.navBarFooter {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 0 5px 22px 14px;
+    gap: 16px;
+
+    span {
+        font-weight: 500;
+        color: #0000003d;
+    }
+
+    p {
+        color: #000000a3;
+    }
+}
+
 @media (hover: hover) {
     .navBarList {
         a:hover > span {

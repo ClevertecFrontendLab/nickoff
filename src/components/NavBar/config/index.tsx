@@ -94,6 +94,7 @@ export const menuItems = [
             { linkLabel: 'Сыроедческие блюда', path: '/vegan-cuisine/first-course' },
             { linkLabel: 'Напитки', path: '/vegan-cuisine/first-course' },
         ],
+        testId: 'vegan-cuisine',
     },
     {
         label: 'Детские блюда',

@@ -5,6 +5,7 @@ import {
     AccordionItem,
     AccordionPanel,
     Box,
+    Button,
     Icon,
     List,
     ListItem,
@@ -12,6 +13,7 @@ import {
 import { NavLink } from 'react-router';
 
 import ChevronDownIcon from '~/assets/icons/chevron-down.svg?react';
+import LeftIcon from '~/assets/icons/left-icon.svg?react';
 
 import { menuItems } from '../config';
 import styles from './NavBar.module.css';
@@ -29,6 +31,7 @@ export const NavBar = () => (
             {menuItems.map((item, index) => (
                 <AccordionItem key={index} border='none'>
                     <AccordionButton
+                        data-test-id={item.testId || ''}
                         position='relative'
                         pl='8px'
                         pr='0px'
@@ -63,5 +66,27 @@ export const NavBar = () => (
                 </AccordionItem>
             ))}
         </Accordion>
+        <footer className={styles.navBarFooter}>
+            <span>Версия программы 03.25</span>
+            <p>
+                Все права защищены,
+                <br />
+                ученический файл,
+                <br />
+                ©Клевер Технолоджи, 2025
+            </p>
+            <Button
+                leftIcon={<LeftIcon />}
+                size='xs'
+                variant='link'
+                color='black'
+                fontWeight='600'
+                display='flex'
+                alignItems='flex-start'
+                justifyContent='flex-start'
+            >
+                Выйти
+            </Button>
+        </footer>
     </div>
 );
